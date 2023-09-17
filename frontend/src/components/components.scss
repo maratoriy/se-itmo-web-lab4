@@ -1,0 +1,23 @@
+@import "../style";
+
+.navbar {
+  z-index: 10000;
+}
+
+.offcanvas {
+  z-index: 10001;
+}
+
+@include media-breakpoint-up(md) {
+  .navbar-offcanvas-toggler {
+    display: none;
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+}
